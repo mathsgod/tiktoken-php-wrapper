@@ -1,4 +1,4 @@
-# Tiktoken PHP
+# Tiktoken PHP Wrapper
 
 This is a PHP library for the OpenAI tiktoken. It wrap the npm package [tiktoken](https://www.npmjs.com/package/tiktoken) to PHP.
 
