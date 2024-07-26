@@ -83,7 +83,7 @@ class Encoder
 
             $setIncludePath = "PATH={$this->includePath}";
 
-            Process::fromShellCommandline(
+            $process = Process::fromShellCommandline(
                 $setIncludePath . ' ' .
                     $this->getNodePathCommand('node') . ' ' .
                     'node ' .
@@ -91,7 +91,7 @@ class Encoder
                     ' -m ' . escapeshellarg($this->model) .
                     ' -f ' . escapeshellarg($file) .
                     ' -e'
-            )->run();
+            );
         }
 
 
