@@ -14,7 +14,8 @@
     },
     "autoload": {
         "psr-4": {
-            "OpenAI\\": "src"
+            "OpenAI\\": "src",
+            "OpenAI\\Tiktoken\\": "src/Tiktoken"
         }
     }
 }
