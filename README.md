@@ -20,13 +20,19 @@ npm i tiktoken
 
 use OpenAI\Tiktoken;
 
-try {
-    $enc = OpenAI\Tiktoken::EncodingForModel("gpt-4o");
-
-    $tokens = $enc->encode("hello world!");
-} catch (Exception $e) {
-    echo $e->getMessage();
-    die();
-}
+$enc = OpenAI\Tiktoken::EncodingForModel("gpt-4o");
+$tokens = $enc->encode("hello world!");
 
 ```
+
+
+### Decoding
+
+```php
+use OpenAI\Tiktoken;
+
+$enc = OpenAI\Tiktoken::EncodingForModel("gpt-4o");
+$text = $enc->decode([24912,2375]);
+```
+
+
